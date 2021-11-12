@@ -15,7 +15,7 @@ namespace CosmosTableSamples
             Console.WriteLine("Azure Cosmos DB Table - Advanced Samples\n");
             Console.WriteLine();
 
-            string tableName = "demo" + Guid.NewGuid().ToString().Substring(0, 5);
+            string tableName = "demo" + Guid.NewGuid().ToString();
 
             // Create or reference an existing table
             CloudTable table = await Common.CreateTableAsync(tableName);

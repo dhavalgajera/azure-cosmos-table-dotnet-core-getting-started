@@ -52,7 +52,7 @@ namespace CosmosTableSamples
 
                 // Execute the operation.
                 TableResult result = await table.ExecuteAsync(insertOrMergeOperation);
-                CustomerEntity insertedCustomer = result.Result as CustomerEntity;
+                CustomerEntity insertedCustomer = result.Result as CustomerEntity                                                                                   ;
 
                 if (result.RequestCharge.HasValue)
                 {
